@@ -42,5 +42,6 @@ async function route(url) {
     return await render(page);
 }
 
-app.listen(8000);
-console.log('listen port 8000 ....');
+app.listen(8000, () => {
+    console.log('listen port 8000 ....');
+});
